@@ -1,0 +1,225 @@
+.container {
+  background-color: #f8f8f8;
+}
+
+.header {
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 20vh;
+  background-color: #f8f8f8;
+}
+.header h6 {
+  color: rgba(129, 129, 129, 0.3);
+}
+.header .title {
+  color: red;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+}
+.header .contact {
+  font-size: 32px;
+}
+.header img {
+  height: 100px;
+  width: 300px;
+}
+@media (max-width: 770px) {
+  .header .contact {
+    font-size: 20px;
+  }
+  .header img {
+    height: 70px;
+    width: 110px;
+  }
+  .header h6, .header h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 361px) {
+  .header h6, .header h4 {
+    font-size: 0px;
+  }
+  .header .contact {
+    font-size: 15px;
+  }
+}
+
+.nav {
+  background-color: black;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+}
+.nav img {
+  width: 40px;
+  height: 40px;
+}
+.nav_btn {
+  display: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+.nav_btn:hover {
+  transform: rotate(180deg);
+}
+@media (max-width: 770px) {
+  .nav_btn {
+    display: block;
+  }
+  .nav_sidebar {
+    display: none;
+  }
+}
+.nav_link {
+  color: white;
+  transition: 300ms;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  cursor: pointer;
+}
+.nav_link:hover {
+  font-size: 28px;
+  border-bottom: white solid 1px;
+}
+.nav_menu {
+  align-items: center;
+  right: 3px;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  z-index: 10;
+}
+.nav_mobile {
+  font-size: 20px;
+}
+.nav_mobile:hover {
+  font-size: 21px;
+  border-bottom: white 1px solid;
+}
+.nav_mobile:active {
+  font-size: 21px;
+  border-bottom: white 1px solid;
+}
+
+.desc {
+  height: 70vh;
+  background-image: url("https://obustroeno.com/wp-content/uploads/img5bcc7c358c3508.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+}
+.desc:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  align-items: center;
+}
+.desc_text {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.desc_text h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 32px;
+}
+.desc_text h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  border-bottom: solid 1px black;
+  margin-bottom: 10px;
+}
+.desc_text li {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  list-style: square outside;
+}
+
+.catalog {
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+}
+.catalog_wrap {
+  height: 92vh;
+}
+.catalog_block {
+  text-align: center;
+  justify-content: center;
+  height: 45vh;
+  width: 41vw;
+  position: relative;
+}
+.catalog_block span {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  left: 42%;
+  top: 45%;
+  cursor: pointer;
+}
+.catalog_block span:hover {
+  border-bottom: 1px solid white;
+}
+.catalog_img {
+  height: 45vh;
+  width: 41vw;
+}
+.catalog_overflow {
+  position: absolute;
+  height: 100%;
+  width: 99%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+@media (max-width: 550px) {
+  .catalog {
+    font-size: 18px;
+  }
+  .catalog_img {
+    width: 90vw;
+  }
+  .catalog_overflow {
+    width: 90vw;
+  }
+  .catalog_block span {
+    font-size: 20px;
+    left: 39%;
+  }
+}
+@media (max-width: 770px) {
+  .catalog {
+    font-size: 25px;
+  }
+  .catalog_img {
+    width: 90vw;
+  }
+  .catalog_overflow {
+    width: 90vw;
+    left: calc(50% - 45vw);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
