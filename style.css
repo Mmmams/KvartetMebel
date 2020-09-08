@@ -210,7 +210,7 @@
     left: 39%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   .catalog {
     font-size: 25px;
   }
@@ -226,7 +226,7 @@
 .product {
   margin: 5px 0px;
   min-height: 100vh;
-  max-height: 175vh;
+  max-height: 250vh;
   align-items: center;
   border-bottom: 1px solid black;
 }
@@ -253,8 +253,8 @@
 }
 .product_slider .fotorama {
   margin: 0 auto;
-  width: 45vw;
-  height: 30vw;
+  width: 100%;
+  height: 66%;
 }
 @media (max-width: 1030px) {
   .product_text h1 {
@@ -265,6 +265,12 @@
   }
   .product_text li {
     font-size: 17px;
+  }
+}
+@media (max-width: 770px) {
+  .product .fotorama {
+    width: 100%;
+    height: 33%;
   }
 }
 

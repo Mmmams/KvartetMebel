@@ -169,7 +169,7 @@ $roboto:'Roboto', sans-serif
                     font-size: 20px
                     left: 39%
 
-    @media(max-width: 770px)
+    @media(max-width: 767px)
         &
             font-size: 25px
             &_img
@@ -181,7 +181,7 @@ $roboto:'Roboto', sans-serif
 .product
     margin: 5px 0px
     min-height: 100vh
-    max-height: 175vh
+    max-height: 250vh
     align-items: center
     border-bottom: 1px solid black
     &_text
@@ -204,8 +204,8 @@ $roboto:'Roboto', sans-serif
     &_slider
         .fotorama
             margin: 0 auto
-            width: 45vw
-            height: 30vw
+            width: 100%
+            height: 66%
     @media(max-width: 1030px)
         &_text
             h1
@@ -214,7 +214,10 @@ $roboto:'Roboto', sans-serif
                 font-size: 20px
             li
                 font-size: 17px
-
+    @media(max-width: 770px)
+        .fotorama
+            width: 100%
+            height: 33%
 .contact_title
     justify-content: center
     align-items: center
