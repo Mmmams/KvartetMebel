@@ -1,6 +1,9 @@
 $roboto:'Roboto', sans-serif
 .container
     background-color: rgb(248,248,248)
+.all_prod_wrapper
+    .prod_wrapper:nth-child(2n+1)
+        background-color: #fafaff
 .header
     align-items: center
     justify-content: space-around
@@ -39,6 +42,21 @@ $roboto:'Roboto', sans-serif
     height: 10vh
     text-align: center
     align-items: center
+    span
+        a
+            outline: none
+            text-decoration: none
+            color: white
+    &_sidebar
+        a
+            outline: none
+            text-decoration: none
+            color: white
+        a:hover
+            outline: none
+            text-decoration: none
+            color: white
+
     img
         width: 40px
         height: 40px
@@ -127,6 +145,15 @@ $roboto:'Roboto', sans-serif
     &_wrap
         max-height: 184vh
         min-height: 92vh
+        span
+            a
+                outline: none
+                text-decoration: none
+                color: white
+            a:hover
+                outline: none
+                text-decoration: none
+                color: white
     &_block
         text-align: center
         justify-content: center
@@ -183,21 +210,27 @@ $roboto:'Roboto', sans-serif
     min-height: 100vh
     max-height: 250vh
     align-items: center
-    border-bottom: 1px solid black
     &_text
-        background-color: rgba(129, 188, 255, 0.3)
+        //background-color: rgba(111, 115, 56,0.3)
         align-items: center
         h1
             color: black
             font-family: $roboto
             font-style: italic
             font-size: 55px
+
         h4
             color: black
             font-family: $roboto
             font-weight: lighter
-            font-size: 36px
+            font-size: 20px
+            overflow-y: scroll
+            max-height: 350px
+            min-height: 100px
+            font-style: italic
+        ol
             border-bottom: 1px solid black
+            border-top: 1px solid black
         li
             list-style: circle
             font-size: 30px
@@ -211,14 +244,16 @@ $roboto:'Roboto', sans-serif
             h1
                 font-size: 30px
             h4
-                font-size: 20px
+                font-size: 17px
             li
                 font-size: 17px
     @media(max-width: 770px)
+        margin: 25px 0
         .fotorama
             width: 100%
             height: 33%
-.contact_title
+            margin: 10px 0
+.contacts_title
     justify-content: center
     align-items: center
     height: 8vh
@@ -228,14 +263,39 @@ $roboto:'Roboto', sans-serif
     background-color: black
     color: white
 .contacts
-    height: 92vh
-    justify-content: center
-    text-align: center
+    min-height: 86vh
+    max-height: 190vh
     align-items: center
-    position: relative
+    text-align: center
     //background-color: #a0a0a0
     &_block
         font-size: 42px
         img
             height: 8vh
             width: 8vh
+    @media(max-width: 767px)
+        &_block
+            font-size: 20px
+        img
+            height: 4vh
+            width: 4vh
+        &_map_block
+            width: 300px
+            height: 550px
+            margin: 0 auto
+.footer
+    min-height: 7vh
+    max-height: 17vh
+    background-color: black
+    &_img
+        width: 4vh
+        height: 4vh
+        cursor: pointer
+        margin: 2px 1px
+    &_title
+        font-size: 20px
+        font-family: $roboto
+        font-style: italic
+        color: gray
+
+
